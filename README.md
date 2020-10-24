@@ -1,2 +1,1 @@
-# githubexplorer
-🚀 Bootcamp RocketSeat - GitHub Explorer
+# GitHub Explorer
