@@ -1,5 +1,6 @@
 <h1 align="center">
-    <img alt="GoStack Bootcamp" src="https://res.cloudinary.com/marcelojrfarias/image/upload/v1604355251/logo_hegw8y.svg" />
+    <img alt="GoStack Bootcamp" src="https://res.cloudinary.com/marcelojrfarias/image/upload/v1587323057/gostack_gy3h7u.png" />
+    <img alt="GitHub Explorer" src="https://res.cloudinary.com/marcelojrfarias/image/upload/v1604355251/logo_hegw8y.svg" />
     <br>
     GitHub Explorer
 </h1>
@@ -31,7 +32,7 @@
 <p align="center">
   <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#gear-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#computer-web-application">Application</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#computer-application">Application</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">License</a>
 </p>
 
