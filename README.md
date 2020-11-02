@@ -1,7 +1,6 @@
 <h1 align="center">
     <img alt="GoStack Bootcamp" src="https://res.cloudinary.com/marcelojrfarias/image/upload/v1587323057/gostack_gy3h7u.png" />
     <br>
-    <br>
     <img alt="GitHub Explorer" src="https://res.cloudinary.com/marcelojrfarias/image/upload/v1604355251/logo_hegw8y.svg" />
     <br>
 </h1>
