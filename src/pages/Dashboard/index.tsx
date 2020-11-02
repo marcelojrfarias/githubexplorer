@@ -1,4 +1,4 @@
-import React, { useState, FormEvent } from 'react';
+import React, { useState, FormEvent, useEffect } from 'react';
 import { FiChevronRight } from 'react-icons/fi';
 
 import api from '../../services/api';
@@ -17,9 +17,17 @@ interface Repository {
 }
 
 const Dashboard: React.FunctionComponent = () => {
-  const [repositories, setRepositories] = useState<Repository[]>([]);
   const [newRepository, setNewRepository] = useState('');
   const [inputError, setInputError] = useState('');
+  const [repositories, setRepositories] = useState<Repository[]>(() => {
+    const storagedRepositories = localStorage.getItem(
+      '@GitHubExplorer:repositories',
+    );
+
+    if (storagedRepositories) return JSON.parse(storagedRepositories);
+
+    return [];
+  });
 
   async function handleAddRepository(
     event: FormEvent<HTMLFormElement>,
@@ -33,9 +41,7 @@ const Dashboard: React.FunctionComponent = () => {
 
     try {
       const response = await api.get<Repository>(`repos/${newRepository}`);
-
       const repository = response.data;
-
       setRepositories([...repositories, repository]);
       setNewRepository('');
       setInputError('');
@@ -43,6 +49,13 @@ const Dashboard: React.FunctionComponent = () => {
       setInputError('Erro na busca do repositório!');
     }
   }
+
+  useEffect(() => {
+    localStorage.setItem(
+      '@GitHubExplorer:repositories',
+      JSON.stringify(repositories),
+    );
+  }, [repositories]);
 
   return (
     <>
